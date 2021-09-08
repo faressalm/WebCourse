@@ -14,8 +14,15 @@ person={name:  "ahmed",
      this.age=age;
      this.name=name;
      this.color=color;
+
+     //methods for this object
+     this.changeCatColor=changeCatColor;
+     function changeCatColor(age){
+         this.age=age;
+     }
  }
  emp =new catconstructor(1,"bo2somat","white");  
+ emp.changeCatColor(7);
  document.write(emp.name+emp.age);     
 /*for (let i = 1; i <= 6; i++) {
     
