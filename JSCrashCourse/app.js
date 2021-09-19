@@ -83,7 +83,7 @@ function check(par){
 window.onload=function myload(){
     showTime();   
 }
-
+*/
 //Dom 
 var itsarray =document.getElementsByClassName("content");
 var tagnamearray= itsarray[0].getElementsByTagName("p");
@@ -105,7 +105,8 @@ menuu.insertBefore(newLi,menuu.getElementsByTagName("li")[1]);
 //remove ele from DOM
 var parent = menuu;
 var child = menuu.getElementsByTagName("li")[1];
-parent.removeChild(child);*/
+parent.removeChild(child);
+
 
 /*for (let i = 1; i <= 6; i++) {
     
