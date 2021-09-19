@@ -59,15 +59,15 @@ document.write(Math.floor(2.9) +"<br>");
 document.write(Math.ceil(2.3) +"<br>");
 document.write(Math.round(2.4)+" "+ Math.round(2.6) +"<br>");
 document.write(Math.abs(-9) +"<br>");
-*/
+
 //Date
 
 function  showTime() {
     var myDate = new Date()
     var month,day,year,sec,min,hour;
     year=myDate.getFullYear();
-    month=myDate.getMonth();
-    day=myDate.getDay();
+    month=myDate.getMonth()+1;
+    day=myDate.getDate();
     hour=myDate.getHours()
     min=check(myDate.getMinutes())
     sec=check(myDate.getSeconds())
@@ -83,6 +83,30 @@ function check(par){
 window.onload=function myload(){
     showTime();   
 }
+
+//Dom 
+var itsarray =document.getElementsByClassName("content");
+var tagnamearray= itsarray[0].getElementsByTagName("p");
+tagnamearray[0].innerHTML= "go fares";
+var justOneElement = document.getElementById("testa");
+justOneElement.textContent="farosa"
+justOneElement.getAttribute("class");
+justOneElement.setAttribute("class","ff");
+justOneElement.setAttribute("style","color: red")
+//append elements 
+var newA = document.createElement("a");
+var newLi = document.createElement("li");
+newA.innerHTML="new one";
+newA.setAttribute("href","www.notion.com");
+newLi.appendChild(newA);
+var menuu = document.getElementsByClassName("DOM")[0].getElementsByTagName("ul")[0];
+menuu.insertBefore(newLi,menuu.getElementsByTagName("li")[1]);
+
+//remove ele from DOM
+var parent = menuu;
+var child = menuu.getElementsByTagName("li")[1];
+parent.removeChild(child);*/
+
 /*for (let i = 1; i <= 6; i++) {
     
     document.write( "<h"+person.number[i-1]+ "> fares waheed <br>");
