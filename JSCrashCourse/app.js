@@ -83,7 +83,7 @@ function check(par){
 window.onload=function myload(){
     showTime();   
 }
-*/
+
 //Dom 
 var itsarray =document.getElementsByClassName("content");
 var tagnamearray= itsarray[0].getElementsByTagName("p");
@@ -107,6 +107,50 @@ var parent = menuu;
 var child = menuu.getElementsByTagName("li")[1];
 parent.removeChild(child);
 
+
+// Timer
+var mes=document.getElementById("message");
+var counter=0;
+var colors =["red","blue","cyan","white"];
+function showMessage(){
+  mes.className="show";
+  setTimeout(() => {
+    mes.style.backgroundColor=colors[counter];
+    counter=(counter+1)%4;
+  }, 1000);
+
+}
+
+var timeshow =setInterval(showMessage,2000);
+mes.onclick = function () {
+    clearInterval(timeshow);
+    mes.getElementsByTagName("p")[0].innerHTML="that the end";
+    if(mes.className == "show"){
+        mes.className ="colour-changer";
+    }else{
+        mes.className ="show";
+    }
+}*/
+
+//form
+var myform=  document.forms.myform;
+myform.name.value;
+myform.colour.value; //get form element by its name and show its value
+myform.name.onfocus =function(){
+    myform.name.style.border = "4px solid pink"
+};
+myform.name.onblur = function(){
+    myform.name.style.border ="none";
+}
+myform.onsubmit= function () {
+    if(myform.name.value ==""){
+        document.getElementById("messagee").innerHTML="please enter your name";
+        return false;
+    }else{
+        document.getElementById("messagee").innerHTML="";
+        return true;
+    }
+}
 
 /*for (let i = 1; i <= 6; i++) {
     
