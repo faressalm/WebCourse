@@ -19,3 +19,6 @@ console.log('-------------');
 //it may also be used in separting an string to array of letters 
 let name8 = ['a','b','c', ...'Omer']
 console.log(name8)
+//spread the elements in array
+let name9 = [1,2,3,4,5,6,7,8,9]
+console.log(Math.max(...name9));
