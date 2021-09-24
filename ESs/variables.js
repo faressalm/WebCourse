@@ -26,6 +26,7 @@ const  SETTING = {
 //I can change the values of this objects attributes but not the object
 Object.freeze(SETTING);//to stop obj attribute changing 
 
+
 let age = 20;
 function sum(){
     let age = 33;
