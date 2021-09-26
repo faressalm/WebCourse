@@ -19,3 +19,11 @@ console.log('-------------------');
 // to make function dynamic 
 var numbers = new Function('...args','return args');
 console.log(numbers(1,2,3,4));
+
+
+//Default Function parameter 
+function sum(name="Default name", age="Default age" ) {
+    return `hellow ${name} your age is : ${age} `;
+ }
+ 
+ console.log(sum("ahmed"))
