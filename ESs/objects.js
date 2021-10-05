@@ -7,7 +7,7 @@
      age,
      //computed property   it but the value of salary as the key to the value
      [salary]:3000.3,
-     //function
+     //function in ES6
       fullName(){
         return this.fisrName +" "+ this.lastName;
          },
@@ -59,5 +59,3 @@ let country;
 /* or 
  let {country,...otherAttributes} = thirdobj*/
 let destructedObj={country,otherAttributes}
-
-
