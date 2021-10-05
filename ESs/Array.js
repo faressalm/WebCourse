@@ -49,3 +49,14 @@ var name1="Muhammed" ,name2="Ahmed";
 let copyarr=['A','B','C','D','E','F']
 copyarr.copyWithin(1,3,5)
 //[ 'A', 'D', 'E', 'D', 'E', 'F' ]
+
+console.log("_".repeat(30))
+//foreach in array to applly function on each element
+copyarr.forEach((ele,i) => {
+ console.log(`${i} - ${ele}`)
+})
+    //* or by calling a function
+    function printarray(element,index) {
+        console.log(`${index} - ${element}`)
+    }
+    copyarr.forEach(printarray)
