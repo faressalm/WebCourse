@@ -50,13 +50,18 @@ let copyarr=['A','B','C','D','E','F']
 copyarr.copyWithin(1,3,5)
 //[ 'A', 'D', 'E', 'D', 'E', 'F' ]
 
-console.log("_".repeat(30))
+//console.log("_".repeat(30))
 //foreach in array to applly function on each element
 copyarr.forEach((ele,i) => {
- console.log(`${i} - ${ele}`)
+// console.log(`${i} - ${ele}`)
 })
     //* or by calling a function
     function printarray(element,index) {
-        console.log(`${index} - ${element}`)
+       // console.log(`${index} - ${element}`)
     }
     copyarr.forEach(printarray)
+// Destructing array , skeaping , how to put default value , spreading 
+let arrdes=["rice",'burger','beans','eggs',["rice","pasta"],'burger','beans','eggs']
+const [first, ,second, ,[carp1,carp2] ,...othersfood]=  arrdes   // [first,,second,,third="defaut"]=  arrdes  if they already declared
+//console.log(`${first} and ${second} and ${carp1} or ${carp2}  and ${othersfood}` )
+
