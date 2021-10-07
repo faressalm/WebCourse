@@ -1,0 +1,18 @@
+{
+    "name": "nodep",
+    "version": "1.0.0",
+    "description": "ES6 tutorial",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js ",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Fares Waheed",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.15.8",
+        "@babel/node": "^7.15.8",
+        "@babel/preset-env": "^7.15.8",
+        "nodemon": "^2.0.13"
+    }
+}
