@@ -15,6 +15,10 @@ let checkNum = new Promise((resolve, rejected) => {
     console.log('the result is : ' + e)
 })*/
 
+// Other Syntax 
+
+checkNum.then(null, (rejected) => console.log(rejected));
+checkNum.catch((rejected) => console.log(rejected));
 
 // to apply function in the two cases of promise 
 let myApproved = (x) => {
