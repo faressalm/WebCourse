@@ -22,4 +22,3 @@ import Product from './mobile.js'
 
 let myNameIs = new Product('Salim')
 myNameIs.priceProduct()
-import Product from './product.js'
